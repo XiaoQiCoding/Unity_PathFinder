@@ -7,7 +7,7 @@ public class MapComp : MonoBehaviour
     // Start is called before the first frame update
     public GameObject MapParent;
     public List<List<Transform>> map;
-    private PathFinding pathFinder;
+    private PathFinder pathFinder;
     public GameObject zombie;
     public GameObject sunFlower;
     public Sprite ZombieSprite;
@@ -15,7 +15,7 @@ public class MapComp : MonoBehaviour
 
     private void Start()
     {
-        pathFinder = GetComponent<PathFinding>();
+        pathFinder = GetComponent<PathFinder>();
         // 初始化地图（5行9列）
         map = new List<List<Transform>>();
         for (int i = 0; i < 5; i++)
